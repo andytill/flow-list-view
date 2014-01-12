@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<VBox prefHeight="-1.0" prefWidth="-1.0" spacing="5.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="flowlistview.demo.FlowListViewAppView">
+  <children>
+    <fx:include fx:id="flowList" source="/flowlistview/flow-list-view.fxml" />
+    <HBox prefHeight="-1.0" prefWidth="-1.0" spacing="5.0">
+      <children>
+        <TextField fx:id="nameField" prefWidth="200.0" />
+        <Button mnemonicParsing="false" onAction="#onAdd" text="Add" />
+        <Button mnemonicParsing="false" onAction="#onRemove" text="Remove" />
+      </children>
+    </HBox>
+  </children>
+  <padding>
+    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+  </padding>
+</VBox>
